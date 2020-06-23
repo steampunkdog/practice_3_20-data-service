@@ -1,13 +1,16 @@
 package anyshchenko.nikita.practice_3_20dataservice.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 @Data
-public class EventDate {
+@NoArgsConstructor
+public class EventDate implements Serializable {
     private LocalDateTime startDateTime;
     private Boolean startApproximate;
     private LocalDateTime endDateTime;

@@ -1,9 +1,13 @@
 package anyshchenko.nikita.practice_3_20dataservice.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 @Data
-public class Classification {
+@NoArgsConstructor
+public class Classification implements Serializable {
     private Boolean primary;
     private Segment segment;
     private Segment genre;

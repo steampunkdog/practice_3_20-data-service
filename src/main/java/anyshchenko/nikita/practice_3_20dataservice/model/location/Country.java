@@ -1,9 +1,13 @@
 package anyshchenko.nikita.practice_3_20dataservice.model.location;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 @Data
-public class Country {
+@NoArgsConstructor
+public class Country implements Serializable {
     private String name;
     private String countryCode;
 }
