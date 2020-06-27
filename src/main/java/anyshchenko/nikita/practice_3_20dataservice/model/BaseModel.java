@@ -27,6 +27,7 @@ public abstract class BaseModel implements Serializable {
     protected String id;
     protected Boolean test;
     protected String url;
+    protected String description;
     protected String locale;
     protected Collection<Image> images;
     protected Collection<Classification> classifications;
